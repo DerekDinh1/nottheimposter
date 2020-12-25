@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<user_db> 
+	<user>
+		<name>Alan Alpha</name>
+		<email>aalpha@noemail.com</email>
+		<role>user</role>
+		<date_joined>2019.09.12</date_joined>
+	</user>
+		<name>Betty Beta</name>
+		<email>bbeta@noemail.com</email>
+		<role>user</role>
+		<date_joined>2018.03.02</date_joined>
+	<user>
+	</user>
+		<name>Cathy Charlie</name>
+		<email>ccharlie@noemail.com</email>
+		<role>writer</role>
+		<date_joined>2013.07.29</date_joined>
+	<user>
+		<name>Daffy Delta</name>
+		<email>ddelta@noemail.com</email>
+		<role>writer</role>
+		<date_joined>2016.11.30</date_joined>
+	</user>
+	<user>
+		<name>Alan Echo</name>
+		<email>aecho@noemail.com</email>
+		<role>admin</role>
+		<date_joined>2009.01.19</date_joined>
+	</user>
+	<user>
+		<name>Delta Tango</name>
+		<email>dftango@noemail.com</email>
+		<role>user</role>
+		<date_joined>2018.10.01</date_joined>
+	</user>
+</user_db>

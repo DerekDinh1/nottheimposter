@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login Page</title>
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<script src="index.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<img src="Logos/twitter_header_photo_2.png" alt="For the Impostr logo" class="logo">
+			
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- Button to open the modal login form -->
+		<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+		<!-- The Modal -->
+		<div id="id01" class="modal">
+			<span onclick="document.getElementById('id01').style.display='none'"
+			class="close" title="Close Modal">&times;</span>
+
+			<!-- Modal Content -->
+			<form class="modal-content animate" action="/action_page.php" onsubmit="return validateForm()" name="myForm" method="post">
+				<div class="imgcontainer">
+					<img src="Logos/pinterest_profile_image.png" alt="Avatar" class="avatar">
+				</div>
+
+				<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname">
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw">
+
+					<button type="submit">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+				</div>
+
+				<div class="container">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					<button type="button" class="createbtn" href="">New User</button>
+					
+					<span class="psw"><a href="#">Forgot Password?</a></span>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

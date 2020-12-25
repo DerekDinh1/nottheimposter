@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import
+url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+
+/*Makes padding easier to deal with*/
+*{
+	box-sizing: border-box;
+}
+
+
+/*-------Body-------*/
+body{
+	background: #000000;
+	font-family: 'Montserrat';
+	margin: 0;
+	text-align: center;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+/*-------Typohgraphy-------*/
+h1 { 
+	font-size: 2rem;
+	font-weight: 300;
+}
+@media (min-width:60rem){
+	.title, .headline{
+		font-size: 3.7rem;
+	}
+}
+
+
+/*-------Header-------*/
+header{
+/*	position: absolute;*/
+	margin-top: 1em;
+}
+nav{
+	background-color: #000000;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li{
+	display: inline-block;
+	margin: 1em;
+}
+nav a{
+	color: #B2EBF9;
+	font-size: .9em;
+	font-weight: 900;
+	padding: .5em;
+	text-decoration: none;
+}
+nav a:hover,
+nav a:focus{
+	color: #869296;
+}
+.logo{
+	position: center;
+	max-height: auto;
+	width: 100%;
+}
+
+
+/*-------Hero Area-------*/
+.button{
+	color: #869296;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-block;
+	font-size: 0.85rem;
+	padding: 0.5em 1em;
+	padding-top: 0.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#button-accent:hover,
+#button-accent:focus{
+	background: #B2EBF9;
+	color: #171717;
+}
+#button-accent1:hover,
+#button-accent1:focus{
+	background: #B2EBF9;
+	color: #171717;
+}
+.home-hero{
+	background-image: url("Images/hero-bg3.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 10em 0;
+}
+.home-hero .headline{
+	color: #B2EBF9;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+@media (min-width:60rem){
+	.home-hero{
+		height: 100vh;
+	}
+	.button{
+		font-size: 1.5rem;
+	}
+}
+
+
+/*-------About Section-------*/
+.home-about{
+	background-image: url("Images/hero-bg1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 1em;
+	padding: 10em 0;
+}
+.home-about h1{
+	color: #B2EBF9;
+	font-size: 3em;
+	margin: 1em;
+}
+.home-about p{
+	border-width: 2px;
+	color: #869296;
+	padding: 0.5em;
+}
+/*
+.home-about span{
+	
+}
+*/
+.title span{
+	font-weight: 300;
+}
+
+/*-------About Page-------*/
+.about{
+	background-image: url("Images/about.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 1em;
+	padding: 10em 0;
+}
+.about-textbox {
+	background-color: #171717;
+	outline: 2px solid #B2EBF9;
+	outline-offset: -2em;
+	padding: 3em;
+	width: 100%;
+}
+.about h1{
+	background-colot: #171717;
+	color: #B2EBF9;
+	font-size: 3em;
+	margin: 1em;
+}
+.about p{
+	border-width: 2px;
+	color: #869296;
+	padding: 0.5em;
+}
+
+
+/*-------Footer-------*/
+footer{
+	background-color: #000000;
+	margin-top: 1em;	
+}
+.col-1 ul{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.col-1 li{
+	color: #B2EBF9;
+	margin: 1em;
+}
+
+
+
+/*-------Modal login page-------*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #B2EBF9;
+  color: 171717;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.8em;
+  font-weight: 150;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #B2EBF9;
+  font-size: 0.8em;
+  font-weight: 150;
+  float: right;
+}
+
+.createbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #B2EBF9;
+  font-size: 0.8em;
+  font-weight: 150;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/*.container {
+  padding: 16px;
+}*/
+
+span.psw {
+/*  float: right;*/
+  padding-top: 16px;
+  font-size: 0.8em;
+  font-weight: 150;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #869296;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
